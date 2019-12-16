@@ -273,7 +273,7 @@ set_config () {
     if was_error; then
         return "$KO_CODE"
     fi
-    sed -i -e "s/\(^#*$config${current//\//\\\/}\).*/$config${new//\//\\\/}/" "$ENV_FILE"
+    sed -i -e "s/\(^#*$config${current//\//\\/}\).*/$config${new//\//\\/}/" "$ENV_FILE"
     if was_error; then
         return "$KO_CODE"
     fi
