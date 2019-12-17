@@ -381,6 +381,10 @@ set_projects_path () {
     set_readable_config "Projects path" "$WWWPATH_CONFIG" "$new"
 }
 
+edit_with_editor () {
+    code .
+}
+
 config_command () {
     for arg in "$@"; do
         case $arg in
@@ -397,6 +401,7 @@ config_command () {
             -r|--root) get_current_document_root; shift;;
             -w=*|--www=*) set_projects_path "${arg#*=}"; shift;;
             -w|--www) get_current_projects_path; shift;;
+            -e|--edit) edit_with_editor; shift;;
         esac
     done
 }

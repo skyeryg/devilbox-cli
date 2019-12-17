@@ -14,6 +14,7 @@ config_command () {
             -r|--root) get_current_document_root; shift;;
             -w=*|--www=*) set_projects_path "${arg#*=}"; shift;;
             -w|--www) get_current_projects_path; shift;;
+            -e|--edit) edit_with_editor; shift;;
         esac
     done
 }

@@ -22,6 +22,7 @@ cat "$SRC_PATH"commands/config/php.sh >> "$BUILD" && echo "" >> "$BUILD"
 cat "$SRC_PATH"commands/config/mysql.sh >> "$BUILD" && echo "" >> "$BUILD"
 cat "$SRC_PATH"commands/config/docroot.sh >> "$BUILD" && echo "" >> "$BUILD"
 cat "$SRC_PATH"commands/config/projects.sh >> "$BUILD" && echo "" >> "$BUILD"
+cat "$SRC_PATH"commands/config/editor.sh >> "$BUILD" && echo "" >> "$BUILD"
 
 cat "$SRC_PATH"commands/config.sh >> "$BUILD" && echo "" >> "$BUILD"
 cat "$SRC_PATH"commands/enter.sh >> "$BUILD" && echo "" >> "$BUILD"
